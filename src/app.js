@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import router from "./routes.js";
+import requisitionRoutes from "./routes/requisitionRoutes.js";
 
 const app = express();
 
@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.use("/api/v1/requisitions", router);
+app.use("/api/v1/requisitions", requisitionRoutes);
 
 export default app;

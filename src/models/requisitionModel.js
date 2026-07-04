@@ -83,7 +83,6 @@ const requisitionSchema = new mongoose.Schema(
       default: "onsite",
     },
 
-    // Later LLM will generate this
     interview_rounds: {
       type: Array,
       default: [],
