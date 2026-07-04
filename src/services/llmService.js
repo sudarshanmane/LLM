@@ -1,4 +1,4 @@
-import { openai } from "./openaiclient.js";
+import { openai } from "../config/openai.js";
 
 export async function callLLM(prompt) {
   const response = await openai.chat.completions.create({

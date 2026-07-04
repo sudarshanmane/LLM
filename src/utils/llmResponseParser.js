@@ -23,7 +23,6 @@ export function parseLLMJson(text) {
     }
   } catch (error) {
     console.error("Invalid LLM JSON:", text);
-
     throw new Error("LLM returned invalid JSON");
   }
 }
