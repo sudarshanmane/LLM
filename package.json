@@ -4,9 +4,16 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "dev:worker": "nodemon src/workers/uploadWorker.js",
+    "dev:resume-worker": "nodemon src/workers/resumeWorker.js",
+    "dev:workers": "nodemon src/workers/allWorkers.js",
+    "start": "node server.js",
+    "worker": "node src/workers/uploadWorker.js",
+    "resume-worker": "node src/workers/resumeWorker.js",
+    "workers": "node src/workers/allWorkers.js"
   },
   "dependencies": {
+    "amqplib": "^2.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

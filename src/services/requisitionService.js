@@ -56,6 +56,7 @@ export async function uploadAndParseRequisition(file) {
 
   const rawJdText = await extractTextFromFile(file);
 
+
   if (!rawJdText || rawJdText.trim().length < 20) {
     throw new Error("Could not extract enough text from file");
   }
